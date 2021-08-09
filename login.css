@@ -1,0 +1,111 @@
+.navigation{
+    width: 100%;
+    height:auto;
+    
+    text-align: center;
+    justify-content: center;
+    margin-top: 0%;
+    background-image: linear-gradient(rgba(4,9,30,0.7), rgba(4,9,30,0.7)),url(images/login_img.jpg);
+
+}
+.navigation h1{
+    font-size: 30px;
+    font-weight: bolder;
+
+} 
+.navigation p{
+    font-style: italic;
+}
+.log_form {
+    align-items: center;
+    padding: 20px;
+    display: inline-block;
+    margin-left: 20%;
+    width: 50%;
+    height: 50%;
+    max-width: 600px;
+    min-width: fit-content;
+    justify-content: center;
+
+}
+form{
+    width: 100%;
+    padding: 30px;
+    max-width: 600px;
+    margin-left: 30%;
+    
+
+
+}
+.form_container{
+    padding: 50px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: whitesmoke;
+    border-radius: 2px;
+}
+#name{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+    position: relative;
+    width: 50%;
+
+    align-items: center;
+    justify-content: center;
+
+}
+#password{
+    padding: 8px;
+    position: relative;
+    margin-top: 10px;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+}
+#log-btn{
+    padding: 8px;
+    width: 5%;
+    margin-top: 15px;
+    position: absolute;
+    margin-left: 5%;
+
+}
+#log_btn:hover{
+    transition: 0.4s;
+    background-color: darkslategray;
+}
+@media(max-width:700px){
+    .navigation{
+        width: 100%;
+    }
+    .navigation h1{
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .navigation p{
+        font-size: 10px;
+    }
+    .log_form{
+        width: 5%;
+        margin-left: 0%;
+        padding: 10px;
+    }
+    form{
+        width: 50%;
+        margin-left: 0%;
+    }
+    #name{
+        width: 65%;
+
+    }
+    #password{
+        width: 65%;
+
+    }
+    #log-btn{
+        width: 15%;
+    }
+
+}
