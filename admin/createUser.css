@@ -191,4 +191,9 @@ form{
     transition: 0.4s;
     background: darkslategray;
 }
+select{
+    width: 250px;
+    height: 30px;
+    margin-left: -55px;
+}
 
