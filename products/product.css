@@ -1,0 +1,108 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+
+
+.header p{
+    margin-left: 0px;
+}
+
+
+.header ul{
+    list-style: none;
+    color: white;
+    display: inline-flex;
+    margin-left: 4px;
+    margin-bottom: 15px
+
+}
+.header ul li{
+    width: 120px;
+    margin: 5px;
+    padding: 15px;
+    color: white;
+    justify-content: space-evenly;
+    margin-left: 0px;
+}
+.header{
+    background: rgb(32, 32, 245);
+    height:90px;
+    
+}
+.header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+.active,.header ul li:hover{
+    background-color: rgb(12, 48, 191);
+    border-radius: 60px;
+
+}
+.products{
+    display: none;
+}
+.header ul li:hover .products{
+    display: block;
+    position: absolute;
+    background:rgb(12, 48, 191) ;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.header ul li:hover .products ul{
+    display: block;
+    margin: 10px;
+}
+.header ul li:hover .products li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.header ul li:hover .products li:last-child{
+    border-bottom: none;
+}
+.header ul li:hover .products li a:hover{
+    color: #000;
+}
+.header h1{
+    margin-right: 95px;
+}
+
+#btn-user{
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 55px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#logout{
+    margin-top: 30px;
+    margin-right: 20px;
+    color: white;
+    
+}
+.addBtn{
+    padding: 30px;
+    margin-top: 30px;
+    
+    
+
+}
+#addToCart{
+    margin-left:90%;
+    width: 100px;
+    height: 60px;
+    border-radius: 15px;
+
+    
+}
+.productsAvailable{
+    text-align: center;
+    border-bottom: 2px dotted black;
+}

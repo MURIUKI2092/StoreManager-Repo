@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+
+/* the title part css*/
+.header p{
+    margin-left: 0px;
+}
+
+
+.header ul{
+    list-style: none;
+    color: white;
+    display: inline-flex;
+    margin-left: 4px;
+    margin-bottom: 15px
+
+}
+.header ul li{
+    width: 120px;
+    margin: 5px;
+    padding: 15px;
+    color: white;
+    justify-content: space-evenly;
+    margin-left: 0px;
+}
+.header{
+    background: rgb(32, 32, 245);
+    height:90px;
+    
+}
+.header ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+/*enables hovering*/
+.active,.header ul li:hover{
+    background-color: rgb(12, 48, 191);
+    border-radius: 60px;
+
+}
+.products{
+    display: none;
+}
+.header ul li:hover .products{
+    display: block;
+    position: absolute;
+    background:rgb(12, 48, 191) ;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.header ul li:hover .products ul{
+    display: block;
+    margin: 10px;
+}
+.header ul li:hover .products li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.header ul li:hover .products li:last-child{
+    border-bottom: none;
+}
+.header ul li:hover .products li a:hover{
+    color: #000;
+}
+.header h1{
+    margin-right: 95px;
+}
+
+#btn-user{
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 55px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+/*enables creation of the users avatar*/
+.avatar{
+    align-items: center;
+    padding: 10px;
+}
+
+#avatar{
+    
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 40%;
+
+}
+#searchAvatar{
+    padding: 5px;
+    margin-bottom: 9px;
+    margin-top: 100px;
+}
+/*input tables about user information*/
+form{
+    width: 100%;
+    padding: 20px;
+    max-width: 600px;
+    margin-left: 30%;
+    
+
+
+}
+.log_form {
+    
+    padding: 10px;
+    display: flex;
+    margin-left: 20%;
+    width: 100%;
+    height: 60%;
+    max-width: 600px;
+    min-width: fit-content;
+    justify-content: center;
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.4) ;
+
+
+}
+.form_container{
+    padding: 50px;
+    width: 100%;
+    height: 100%;
+    
+    
+    justify-content: center;
+    box-shadow: whitesmoke;
+    border-radius: 2px;
+}
+#name{
+    margin-top: 10px;
+    margin-bottom: 1px;
+    padding: 8px;
+    position: relative;
+    margin-left: -15%;
+    width: 60%;
+
+    align-items: center;
+    justify-content: center;
+
+}
+#password{
+    padding: 8px;
+    position: relative;
+    margin-left: -15%;
+    margin-top: 10px;
+    width: 60%;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#log-btn{
+    padding: 10px;
+    width: 5%;
+    margin-top: 15px;
+    position: absolute;
+    margin-left: 2%;
+    cursor: pointer;
+    border-radius: 20%;
+    
+
+    background: rgb(34, 21, 213);
+  
+
+}
+#log-btn:hover{
+    transition: 0.4s;
+    background: darkslategray;
+}
+
