@@ -1,0 +1,198 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    text-align: justify;
+    background: whitesmoke;
+    z-index: 1000%;
+}
+.title{
+    background: rgb(59, 76, 82);
+    text-align: center;
+    
+
+}
+.dashboard{
+    padding: 0px;
+    position: fixed;
+    max-width: 14%;
+    min-width:14%;
+    float: left;
+    min-height: 100vh;
+    background: rgb(70, 82, 86);
+}
+.dashboard .upper{
+   min-height: 83.5vh;
+}
+.dashboard .lower{
+    height: 50px;
+    padding: 20px;
+ }
+.dashboard .upper ul{
+    list-style: none;
+    padding: 0;
+    justify-content: space-between;
+}
+.dashboard .upper ul li{
+    text-transform: uppercase;
+    padding: 15px;
+    justify-content: space-between;
+    cursor: pointer;
+    color: rgb(250, 250, 250);
+}
+.dashboard .upper ul li:hover{
+    color: rgb(225, 225, 225);
+    background-color: rgb(25, 95, 123);
+}
+.contents{
+    max-width: 83.6%;
+    float:right;
+    padding: 1%;
+    overflow: auto;
+    max-height: 100%;
+    padding-bottom: 0;
+    height:88.8vh;
+    min-width: 83.6%;
+}
+.contents:hover{
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.7) ;
+}
+
+@media(max-width:700px){
+.dashboard{
+    display: none;
+    max-width: 100%;
+}
+.contents{
+    max-width: 100%;
+    float: none;
+    padding: 20px;
+    max-height: 100%;
+}
+
+
+}
+.toggler{
+    z-index: 100px;
+}
+.products{
+    display: none;
+}
+.dashboard ul li:hover .products{
+    display: block;
+    position: absolute;
+    background:rgb(25, 95, 123); ;
+    margin-top: 15px;
+    margin-left: -15px;
+}
+.dashboard ul li:hover .products ul{
+    display: block;
+    margin: 10px;
+}
+.dashboard ul li:hover .products li{
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted white;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+.dashboard ul li:hover .products li:last-child{
+    border-bottom: none;
+}
+.dashboard ul li:hover .products li a:hover{
+    color:white;
+    font: menu;
+}
+.dashboard h1{
+    margin-right: 95px;
+}
+
+#btn-user{
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 55px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+#logout{
+    margin-top: 30px;
+    margin-right: 20px;
+    color: white;
+    
+}
+.search{
+    margin-top: 10px;
+    padding: 10px;
+    align-items: center;
+    box-shadow:0 0 20px 0px rgba(0,0,0,0.4) ;
+    width: 35%;
+    border-radius: 30px;
+    margin-left: 30%;
+
+}
+input{
+    outline: 0;
+    border-top: white;
+    border-left: white;
+    border-right: white;
+    border: 0.5px solid rgb(rgb(32, 21, 188), green, blue);
+    background: transparent;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 30px;
+
+
+
+}
+#searchBtn{
+    width: 100px;
+    margin-left: 60px;
+    height: 25px;
+    border-radius: 30px;
+    background-color:rgb(12, 48, 191) ;
+}
+#productsHeader{
+    font:bold;
+    border-bottom: 2px black dashed;
+    text-align: center;
+    margin-top: 40px;
+}
+#name{
+    border-bottom: 2px black double;
+    width: 90%;
+
+}
+#ID{
+    margin-right: 10%;
+    margin-top: -27px;
+    text-align: center;
+}
+#price{
+    padding-left: 30px;
+    text-align: right;
+    margin-right: 15%;
+    margin-top: -27px;
+
+
+}
+#update{
+    margin-left: 90%;
+    padding: 2px;
+    margin-top: 10px;
+    background: lightblue;
+    border-radius: 30%;
+}
+#delete{
+    margin-left: 90%;
+    padding: 2px;
+    
+    margin-top: 2px;
+    background: rgb(255, 0, 0);
+    border-radius: 30%;
+}
+
+
+
+
